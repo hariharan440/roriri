@@ -1,0 +1,102 @@
+/* Add border radius to the content */
+.rounded-content {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(3, 3, 3, 0.1);
+    padding: 20px;
+    margin-bottom: 20px; /* Add some space between sections if needed */
+    background: #fff; /* Ensure a white background */
+}
+
+/* Ensure proper image sizing and layout adjustments */
+.img-box1, .img1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Ensure proper image sizing on tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .img1 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767.98px) {
+    .rounded-content {
+        margin-bottom: 1.5rem;
+    }
+    .img1 {
+        text-align: center;
+    }
+    .img1 img {
+        max-width: 100%;
+    }
+    .ps-xxl-4, .ms-xl-3 {
+        padding-left: 15px;
+        margin-left: 0;
+    }
+}
+
+/* Ensure text alignment and spacing */
+.title-area {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+
+.about-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+
+.content-area {
+    padding: 0 30px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333333;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.theme-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.theme-btn:hover {
+    background-color: #0056b3;
+}
+
+.image-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper {
+    max-width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border-radius: 15px 15px 0 0; 
+}
